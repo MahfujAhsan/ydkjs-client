@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MenuAlt1Icon, XCircleIcon,  } from '@heroicons/react/solid';
+import { MenuAlt1Icon, XCircleIcon, } from '@heroicons/react/solid';
 import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
@@ -14,16 +14,16 @@ const Header = () => {
                     <CustomLink to="/home">Home</CustomLink>
                 </li>
                 <li className='mx-8 px-4 py-2'>
-                    <CustomLink to="/dashboard">Dashboard</CustomLink>
+                    <CustomLink to="/reviews">Reviews</CustomLink>
                 </li>
                 <li className='mx-8 px-4 py-2'>
-                    <CustomLink to="/reviews">Reviews</CustomLink>
+                    <CustomLink to="/dashboard">Dashboard</CustomLink>
                 </li>
                 <li className='mx-8 px-4 py-2'>
                     <CustomLink to="/blogs">Blogs</CustomLink>
                 </li>
                 <li className='mx-8 px-4 py-2'>
-                    <CustomLink  to="/about">About</CustomLink>
+                    <CustomLink to="/about">About</CustomLink>
                 </li>
             </ul>
         </div>

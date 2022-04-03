@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import bannerImg from '../../images/product.png'
+import UseUsers from '../hooks/UseUsers';
 import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
-    const [users, setUsers] = useState([]);
-    useEffect(() => {
-        fetch('reviews.json')
-            .then(res => res.json())
-            .then(data => setUsers(data))
-    }, [])
+    const [users, setUsers] = UseUsers();
     return (
         <div className='w-3/4 mx-auto'>
             <div className="text-center md:text-left my-16 flex flex-col-reverse md:grid grid-cols-5 md:gap-24 items-center">
@@ -28,6 +24,13 @@ const Home = () => {
                 {
                     users.slice(0, 3).map(user => <Reviews key={user._id} user={user}></Reviews>)
                 }
+            </div>
+            <div className='flex justify-center mb-5'>
+                <Link to={'/reviews'}>
+                    <button className='text-center text-white font-bold font-mono md:text-xl px-16 py-3 bg-yellow-600 rounded-lg'>
+                        See All Reviews
+                    </button>
+                </Link>
             </div>
         </div>
     );
