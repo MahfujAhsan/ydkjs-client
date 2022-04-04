@@ -2,7 +2,6 @@ import React from 'react';
 
 const Reviews = (props) => {
     const { name, img, reviewTxt, ratings } = props.user;
-    console.log(name)
     return (
         <div>
             <div className='text-center border border-black p-4 rounded-lg'>

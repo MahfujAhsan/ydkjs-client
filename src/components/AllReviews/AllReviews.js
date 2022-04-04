@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import UseUsers from '../hooks/UseUsers';
 import Reviews from '../Reviews/Reviews';
 
