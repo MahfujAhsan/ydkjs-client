@@ -13,7 +13,7 @@ const Home = () => {
                         <h1 className='text-yellow-600'>Developer Guides</h1>
                         <h2 className='text-black mt-2 md:mt-3'>Grow Your JS Knowledge</h2>
                     </div>
-                    <p className='mt-4 font-serif leading-7 md:text-xl md:leading-9'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci ratione veritatis ut repellendus quidem eius, sapiente aspernatur quisquam! Est fugiat aliquid dolorum quis corrupti error facilis, cupiditate voluptas obcaecati molestias.</p>
+                    <p className='mt-4 font-serif leading-7 md:text-xl md:leading-9'>The Good Parts and Flanagan's JavaScript: The Definitive guide. It wasn't until I read Kyle Simpson's YDKJS books (this, Scopes and Closures, and  You Don't Know JS: this & Object Prototypes ) that was able to reach beyond the knowledge had achieved up to then. Kyle Simpson has a concise and clear writing style. He uses many small examples and explains exactly the principle he's demonstrating.</p>
                     <button className='mt-5 border-2 rounded text-sm md:text-2xl font-bold font-mono px-4 py-2 border-yellow-600 hover:bg-black hover:text-white hover:border-black'>Live Demo</button>
                 </div>
                 <div className='col-span-2 '>
