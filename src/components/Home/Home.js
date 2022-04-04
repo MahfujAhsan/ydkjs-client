@@ -20,7 +20,8 @@ const Home = () => {
                     <img className='w-2/4 mx-auto md:w-full' src={bannerImg} alt="productImg" />
                 </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-24 my-12'>
+            <h1 className='text-center text-3xl font-bold font-mono'>Customer Reviews({users.slice(0, 3).length})</h1>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-24 my-12'>
                 {
                     users.slice(0, 3).map(user => <Reviews key={user._id} user={user}></Reviews>)
                 }

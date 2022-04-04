@@ -9,9 +9,9 @@ const Dashboard = () => {
             .then(data => setData(data))
     }, [])
     return (
-        <div className='w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-24'>
+        <div className='w-3/4 mt-12 md:mt-24 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-10 md:gap-24'>
             <div>
-                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-10'>Month Wise Sell</h1>
+                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-4 md:mb-10'>Month Wise Sell</h1>
                 <ResponsiveContainer width="100%" height={400}>
                     <LineChart
                         width={500}
@@ -33,7 +33,7 @@ const Dashboard = () => {
                 </ResponsiveContainer>
             </div>
             <div>
-                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-10'>Investment Vs Revenue</h1>
+                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-4 md:mb-10'>Investment Vs Revenue</h1>
                 <ResponsiveContainer width="100%" height={400}>
                     <AreaChart
                         width={500}
@@ -56,11 +56,11 @@ const Dashboard = () => {
                 </ResponsiveContainer>
             </div>
             <div>
-                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-10'>Investment Vs Revenue</h1>
+                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-4 md:mb-10'>Investment Vs Revenue</h1>
                 <ResponsiveContainer width="100%" height={400}>
                     <BarChart
                         width={500}
-                        height={300}
+                        height={200}
                         data={data}
                         margin={{
                             top: 20,
@@ -80,8 +80,8 @@ const Dashboard = () => {
                 </ResponsiveContainer>
             </div>
             <div>
-                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-10'>Investment Vs Revenue</h1>
-                <PieChart width={400} height={400}>
+                <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-4 md:mb-10'>Investment Vs Revenue</h1>
+                <PieChart className='mx-auto' width={400} height={400}>
                     <Pie
                         data={data}
                         dataKey="investment"
