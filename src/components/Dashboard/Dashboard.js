@@ -81,7 +81,7 @@ const Dashboard = () => {
             </div>
             <div>
                 <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-4 md:mb-10'>Investment Vs Revenue</h1>
-                <PieChart className='mx-auto' width={400} height={400}>
+                <PieChart width={400} height={400}>
                     <Pie
                         data={data}
                         dataKey="investment"

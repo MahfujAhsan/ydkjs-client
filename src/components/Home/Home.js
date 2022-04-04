@@ -7,7 +7,7 @@ const Home = () => {
     const [users, setUsers] = UseUsers();
     return (
         <div className='w-3/4 mx-auto'>
-            <div className="text-center md:text-left my-16 flex flex-col-reverse md:grid grid-cols-5 md:gap-24 items-center">
+            <div className="text-center md:text-left my-16 flex flex-col-reverse md:grid grid-cols-5 gap-12 md:gap-24 items-center">
                 <div className='col-span-3'>
                     <div className='text-2xl md:text-5xl font-mono font-bold'>
                         <h1 className='text-yellow-600'>Developer Guides</h1>
@@ -20,7 +20,7 @@ const Home = () => {
                     <img className='w-2/4 mx-auto md:w-full' src={bannerImg} alt="productImg" />
                 </div>
             </div>
-            <h1 className='text-center text-3xl font-bold font-mono'>Customer Reviews({users.slice(0, 3).length})</h1>
+            <h1 className='text-center text-2xl md:text-3xl font-bold font-mono'>Customer Reviews({users.slice(0, 3).length})</h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-24 my-12'>
                 {
                     users.slice(0, 3).map(user => <Reviews key={user._id} user={user}></Reviews>)
