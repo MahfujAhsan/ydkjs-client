@@ -9,7 +9,7 @@ const Header = () => {
             <div onClick={() => setOpen(!open)} className='h-10 w-10 md:hidden mx-auto'>
                 {open ? <XCircleIcon></XCircleIcon> : <MenuAlt1Icon></MenuAlt1Icon>}
             </div>
-            <ul className={`w-full bg-lime-200 my-3 py-3 text-center text-xl font-bold font-mono grid grid-cols-1 md:flex justify-center md:static absolute duration-500 ease-in ${open ? 'top-8' : 'top-[-280px]'}`}>
+            <ul className={`w-full bg-lime-200 my-3 py-3 text-center z-10 text-xl font-bold font-mono grid grid-cols-1 md:flex justify-center md:static absolute duration-500 ease-in ${open ? 'top-8' : 'top-[-280px]'}`}>
                 <li className='mx-8 px-4 py-2'>
                     <CustomLink to="/home">Home</CustomLink>
                 </li>
