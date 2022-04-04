@@ -28,7 +28,7 @@ const Home = () => {
             </div>
             <div className='flex justify-center mb-5'>
                 <Link to={'/reviews'}>
-                    <button className='text-center text-white font-bold font-mono md:text-xl px-16 py-3 bg-yellow-600 rounded-lg'>
+                    <button className='text-center text-white font-bold font-mono md:text-xl px-10 md:px-16 py-3 bg-yellow-600 rounded-lg'>
                         See All Reviews
                     </button>
                 </Link>
