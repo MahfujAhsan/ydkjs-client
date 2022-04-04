@@ -81,27 +81,12 @@ const Dashboard = () => {
             </div>
             <div>
                 <h1 className='text-center text-2xl font-bold font-mono text-indigo-800 mb-4 md:mb-10'>Investment Vs Revenue</h1>
-                <PieChart width={400} height={400}>
-                    <Pie
-                        data={data}
-                        dataKey="investment"
-                        cx={200}
-                        cy={200}
-                        outerRadius={60}
-                        fill="#8884d8"
-                    />
-                    <Pie
-                        data={data}
-                        dataKey="revenue"
-                        cx={200}
-                        cy={200}
-                        innerRadius={70}
-                        outerRadius={90}
-                        fill="#82ca9d"
-                        label
-                    />
-                    <Tooltip></Tooltip>
-                </PieChart>
+                <ResponsiveContainer width="100%" height={400}>
+                    <PieChart width={400} height={400}>
+                        <Pie data={data} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+                        <Pie data={data} dataKey="investment" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                    </PieChart>
+                </ResponsiveContainer>
             </div>
         </div>
     );
